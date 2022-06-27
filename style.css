@@ -7,9 +7,9 @@
 body{
     font-family: 'Overpass' , sans-serif;
     background-color: hsl(216, 12%, 8%);
-    
-}
 
+}
+/* start first page  */
 .main-class{
     position: absolute;
     top: 50%;
@@ -23,6 +23,7 @@ body{
     height: 550px;
     height: auto;
     border-radius: 20px;
+    visibility: hidden;
     background-color:  hsl(213, 19%, 18%);
 }
 .main-class > h2 {
@@ -82,3 +83,38 @@ body{
     background-color: #fff ;
     color:hsl(25, 97%, 53%) ;
 }
+
+/* end first page  */
+
+/* start second page  */
+.second-class{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    width: 480px;
+    height: 550px;
+    height: auto;
+    border-radius: 20px;  
+    background-color:  hsl(213, 19%, 18%);
+}
+.second-class p{
+    margin : 25px;
+    color: hsl(217, 12%, 63%);
+    text-align: center;
+}
+.second-class img{
+    width: 150px;
+    height: 100px;
+}
+.second-class h1{
+    color: #fff;
+}
+
+/* end second page  */
