@@ -25,7 +25,7 @@ body{
     height: 550px;
     height: auto;
     border-radius: 20px;
-    visibility: hidden;
+    visibility: visible;
     background-color:  hsl(213, 19%, 18%);
 }
 .main-class > h2 {
@@ -56,21 +56,23 @@ body{
     align-items:center;
     color: hsl(217, 12%, 63%);
 }
-.main-class span{
+.main-class .numbers a{
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 18px;
-    padding: 25px;
+    width: 70px;
+    height: 70px;
     cursor: pointer;
     background-color:   hsl(208, 14%, 21%);   
 }
-.main-class span:hover{
+.main-class .numbers a:hover{
     background-color: hsl(217, 12%, 63%);
     color:#fff;
 }
-.main-class span:active{
-    background-color:hsl(25, 97%, 53%) ;
-}
-.main-class a {
+
+.main-class .btn {
     text-align: center;
     background-color:  hsl(25, 97%, 53%);
     padding: 15px 0;
@@ -79,11 +81,13 @@ body{
     letter-spacing: 2px;
     color: #fff;
     border-radius:50px;
-    text-decoration: none;   
+    text-decoration: none;
+    border: none;   
 }
-.main-class a:active{
+.main-class .btn:hover{
     background-color: #fff ;
     color:hsl(25, 97%, 53%) ;
+
 }
 
 /* end first page  */
@@ -99,9 +103,10 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 0px;
     width: 480px;
     height: 550px;
+    visibility: hidden;
     height: auto;
     border-radius: 20px;  
     background-color:  hsl(213, 19%, 18%);
@@ -110,9 +115,11 @@ body{
     margin : 25px;
     color: hsl(217, 12%, 63%);
     text-align: center;
+    max-width: 78%;
 }
 .second-class img{
     width: 150px;
+    margin-top: 48px;
     height: 100px;
 }
 .second-class h1{
